@@ -1,0 +1,45 @@
+  <div class="jumbotron">
+            <form  id="item-info-form"> 
+                <h3 class="display-5" id="item_header" style="font-family: 'Baloo Da 2', cursive;"value="{{item.item_header}}" >{{item.item_header}}</h3>
+                <div style="width:200px;">
+                  <img id="img_url" src="{{item.img_url}}" class="card-img-top" alt="{{item.img_url}}" height="200px" >
+                </div>
+                
+                <hr class="my-4">
+                <p class="lead"> Item Details : {{item.item_explanation}}.</p>
+                <p  id="item_price" id="item_price" value="{{item.item_price}}">Price:$ {{item.item_price}}</p>
+                <div class="form-group">
+                    <label for="FormControlSelect">Quantity :</label>
+                    <select class="form-control" id="FormControlSelect" style="width:80px">
+                      <option>1</option>
+                      <option>2</option>
+                      <option>3</option>
+                      <option>4</option>
+                      <option>5</option>
+                    </select>
+                  </div>
+                <p>Delivery ETA: 03/28/2020</p>
+                <p class="lead">
+                  <div class="col-sm-12 col-md-12 col-lg-12 " id="btnparent">
+                    {{!-- <button type="submit" form="item-info-form" value="Submit" id="{{item.id}}" class="btn btn-primary btn-lg add-to-cart">Add to cart</button> --}}
+                  
+                 </div>
+                </p>
+          </form>
+           <button  value="{{item.id}}"= class="btn btn-primary btn-lg add-to-cart">Add to cart</button>
+    </div>
+{{#if name}}
+<script>
+
+    $('.login').addClass('hide');
+    $('.signup').addClass('hide');
+    $('.logOut').addClass('show');
+    $('.userMessage').addClass('show');
+
+    
+</script>
+{{/if}}
+    
+
+
+    
